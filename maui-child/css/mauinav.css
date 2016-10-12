@@ -1,0 +1,96 @@
+.nav-background {  
+	background: #fff; 					/* <== Background color of the navbar */
+	border-bottom: solid 5px #000;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 100;
+}
+.menu-items {
+	float: right;						/* <== Float the menu from side to side */
+}
+	.menu-items a{
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	.menu-items ul {
+		padding-top: 40px;				/* <== Half the height of logo - 10px */
+		padding-left: 0;
+		list-style-type: none;
+    }
+	.menu-items ul li {
+		display: inline-block;
+        list-style-type: none;
+    }
+	.menu-items ul li a {
+		color: #000;					/* <== Color of menu items */
+		padding: 10px;
+	}
+		.menu-items ul li a:hover {
+			color: #555;				/* <== Color of menu items hover */
+			background: #fff;			/* <== Background color of menu items hover */
+		}
+#maui-menu-toggle {
+	display: none;
+	height: 40px;
+	width: 40px;
+	border-radius: 5px;
+	border: #fff 2px solid;
+}
+.logo-padding {
+	padding-top: 28px;
+	padding-bottom: 25px;
+}
+
+/* Applied to resolutions less than 990 (md) */
+	@media (max-width: 990px) {
+		.menu-items ul {
+			padding-top: 24px;
+		}
+	}
+/* Applied to resolutions less than 768 (sm) */
+	@media (max-width: 768px) {
+		.menu-items {
+			top: 0;
+			right: 0;
+			left: 0;
+			float: none;
+			background: none;			/* <== Background color if diffrent on mobile */
+		}
+			.menu-items ul {
+				margin-bottom: 0;
+				padding-left: 0;
+				padding-top: 10px;
+		    }
+				.menu-items ul li {
+					display: block;
+					border-bottom: 1px #777 solid;
+					padding-left: 15px;
+					padding-right: 15px;
+			    }
+			    .menu-items ul li:last-child {
+					border-bottom: none;
+				}
+					.menu-items ul li a {
+						padding: 5px;
+						display: block;
+						text-decoration: none;
+					}
+		#maui-menu-hidden {
+			display: none;
+		}
+		#maui-menu-show {
+			display: inherit;
+		}
+		#maui-menu-toggle {
+			display: inherit;
+			text-align: center;
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			padding-top: 5px;
+			font-size: 27px;
+			color: #fff;
+		}
+	}

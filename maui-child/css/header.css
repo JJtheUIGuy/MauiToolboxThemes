@@ -1,0 +1,428 @@
+/* NAVBAR across all pages
+================= */
+.topmost-cta {
+	text-align: right;
+	line-height: 1.2;
+	margin-bottom: 0;
+	padding: 5px 0;	
+	background: none;
+	display: block;
+	font-size: 20px;
+	color: #5C88BB;
+}
+.menu-items ul {
+    padding-top: 10px;
+    padding-left: 0px;
+    list-style-type: none;
+}
+@media(max-width: 768px){
+	.navbar-toggle{
+		margin: 40px 20px 20px 20px;
+	}
+	.topmost-cta {
+		display: block;
+		text-align: right;
+	}
+}
+.navbar ul li ul li a.mega-menu-link {
+    line-height: 1.6 !important;
+    padding: 10px !important;
+}
+
+
+/* LOGO
+================= */
+@media (max-width: 768px){
+	.logo{
+		display: inline-block;
+		width: 70%;
+		margin: 10px;
+		padding:0;
+	}
+
+/*	.logo, button.navbar-toggle{
+		margin-top: 28px;
+    	margin-bottom: 25px;
+	}*/
+}
+
+
+/* Search Field on Navbar
+================= */
+.topmost-cta .glyphicon-search {
+    background-color: #416D9E;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+}
+@media (max-width: 768px){
+	.topmost-cta{
+		display: block;
+	}
+}
+
+/***SEARCH*/
+form.search-form {
+    display: inline-block;
+     padding-bottom: 0;
+}
+nav .search-field {
+	background-color: transparent;
+	background-position: 5px center;
+	background-repeat: no-repeat;
+	background-size: 24px 24px;
+	border: none;
+	cursor: pointer;
+	height: 37px;
+	margin: 3px -30px 3px 0;
+	padding: 0 0 0 20px;
+	position: relative;
+	-webkit-transition: width 400ms ease, background 400ms ease;
+	transition:         width 400ms ease, background 400ms ease;
+	width: 0;
+	color: #333;
+}
+nav .search-field:focus {
+	background-color: #fff;
+	border: 2px solid #5C88BB;
+	cursor: text;
+	outline: 0;
+	width: 230px;
+	margin: 3px 0
+}
+nav .search-form .search-submit {
+    display: none;
+}
+.nav-background .glyphicon-search {
+    background-color: #5C88BB;
+    padding: 10px;
+    color:#fff;
+    border:2px solid #5C88BB;;
+}
+.nav-background .glyphicon-search:hover {
+    background-color: #fff;
+    padding: 10px;
+    color: #5C88BB;
+    border:2px solid #5C88BB;
+}
+input#s{
+	width:225px;
+	color:#d3d3d3;
+}
+	input#s:focus{
+		color:#000;
+	}
+.customcolor-btn, input#searchsubmit {
+/*	background: #5c88bb;*/
+	background-color: #01254E;
+	border:none;
+	color: #fff;
+	border-radius: 0;
+	box-shadow: none;
+	text-align: center;
+	text-shadow: none;
+	padding: 8px 25px;
+}
+	.customcolor-btn:hover, input#searchsubmit:hover {
+		border: none;
+		background-color: #72a8e8;
+		color: #fff;
+		text-decoration: none;
+	}
+
+
+/* Header Banner
+================= */
+#header-text >.container{
+	position: relative;
+}
+#headerbanner .container, #productbanner .container, #cat-headerbanner .container{
+	background:none;
+}
+#cat-headerbanner{
+         display: block;
+        width: 100%;
+        max-width: 100%;
+        padding: 31% 0 0 0;
+         margin-top: 78px;
+        background-position: top center;
+         position: relative;
+	    -webkit-background-size: cover !important;
+	    -moz-background-size: cover !important;
+	    -o-background-size: cover !important;
+	    background-size: cover !important;
+	    background-attachment: scroll !important;
+	    background-repeat: no-repeat;
+}
+#headerbanner {
+	height: 550px;
+    padding: 0;
+    margin-top: 78px;
+    position: relative;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    background-attachment: scroll !important;
+    background-repeat: no-repeat;
+}
+section.header-cta {
+    margin-top: 0;
+    font-size: 45px;
+    color: #fff;
+    position: relative;
+}
+.header-cta-btn{
+	background-color: #01254E;
+	padding: 8px 20px;
+	color:#fff;
+	white-space:nowrap;
+	overflow:visible;
+	font-size:32px;
+	border:none;
+	text-shadow:none;
+	font-weight: normal;
+}
+.header-cta-btn:hover{
+	background-color: #fff;
+	text-decoration: none;
+	color: #333;
+}
+.header-quote {
+    font-size: 30px;
+}
+p.header-quote>strong {
+    font-size: 35px;
+}
+@media(min-width: 1500px){
+	.header-cta-bottom {
+	    display: inline-block;
+	}
+}
+@media(max-width: 1200px){
+	.header-cta-btn{
+	    font-size: 24px;
+	    display: block;
+	    width: 100%;
+	}
+	.header-quote{
+		font-size: 25px;
+	}
+	p.header-quote>strong{
+		font-size: 30px;
+	}
+}
+@media(max-width:768px){
+	.header-cta-btn{
+		margin-top: 20px;
+	}
+	.header-quote{
+		line-height: 1.3
+	}
+}
+@media(max-width: 480px){
+	.header-cta-btn{
+	    font-size: 25px;
+	    display: block;
+	    width: 100%;
+	}
+	.header-quote{
+		font-size: 20px;
+	}
+	p.header-quote>strong{
+		font-size: 25px;
+	}
+}
+@media (min-width: 768px){
+	.vcenter {
+		display: inline-block;
+		vertical-align: middle;
+		float: none;
+	}
+}
+
+#productbanner h1, #cat-headerbanner h1{
+	margin: 10px 0;
+	color: #FFF;
+	font-size: 50px;
+	text-shadow: 3px 3px 8px #333;
+}
+#cat-headerbanner h1{
+	position: absolute;
+    top: 30px;
+}
+@media (max-width: 1200px){
+	#cat-headerbanner h1{
+		position: absolute;
+	    top: 10px;
+	}
+}
+@media (max-width: 768px){
+	#cat-headerbanner h1{
+		position: absolute;
+	    top: 10px;
+	    font-size: 45px;
+	}
+}
+
+
+/* RESPONSIVE PRODUCT BANNER
+================= */
+#productbanner{
+/*	background-repeat: no-repeat;
+	background-position: center top;
+	margin-top: 89px;
+	padding:0;
+	max-height:550px;
+	min-height: 150px;
+	width:100%;*/
+	     display: block;
+        width: 100%;
+        max-width: 100%;
+        padding: 21% 0 0 0;
+         margin-top: 78px;
+        background-position: center;
+         position: relative;
+	    -webkit-background-size: cover !important;
+	    -moz-background-size: cover !important;
+	    -o-background-size: cover !important;
+	    background-size: cover !important;
+	    background-attachment: scroll !important;
+	    background-repeat: no-repeat;
+}
+#productbanner.no-touch, #cat-headerbanner.no-touch{
+	background-attachment: fixed;
+}
+#productbanner.touchscreen, #cat-headerbanner.touchscreen{
+	background-attachment: scroll;
+	background-position: center top;
+}
+#cat-headerbanner.servicebanner.touchscreen{
+	background-position: left top;
+}
+
+@media (min-width: 2001px){
+}
+@media (max-width: 2000px){
+	#productbanner{
+		padding: 25% 0 0 0;
+	}
+}
+@media (max-width: 1750px){
+	#productbanner{
+		padding: 30% 0 0 0;
+	}
+}
+@media (max-width: 1500px){
+}
+@media (max-width: 1200px){
+	#cat-headerbanner, #productbanner{
+		padding: 30% 0 0 0;
+	}
+
+}
+@media (max-width:992px){
+
+}
+@media (max-width: 768px){
+	#cat-headerbanner, #productbanner{
+		padding: 30% 0 0 0;
+	}
+}
+@media (max-width: 480px){
+	#cat-headerbanner, #productbanner{
+		padding: 30% 0 0 0;
+	}
+}
+#header-text h1{
+	font-size: 40px;
+}
+/*text below header pic*/
+section#header-text {
+/*    top: 350px;
+    position: relative;
+    margin-top: -250px;*/
+/*	top: 50px;*/
+	    position: relative;
+/*	    margin-top: -40px;*/
+}
+@media(max-width: 1500px){
+/*	.header-cta-bottom{
+		position: static;
+	}*/
+	section#header-text {
+	  /*  background-color: #CC9DCC;*/
+	  background-color: #fff;
+	    margin-top: 0;
+	    position: static;
+	}
+	.header-quote{
+		color: #3f0f50;
+    	font-size: 30px;
+    	text-shadow:none;
+	}
+	p.header-quote>strong {
+	    font-size: 35px;
+	}
+}
+@media(max-width: 768px){
+	.header-quote{
+		color: #3f0f50;
+    	font-size: 24px;
+    	text-shadow:none;
+	}
+	p.header-quote>strong {
+	    font-size: 30px;
+	}
+}
+
+
+/* LOGOS ON HEADER
+================= */
+.logo-container{
+        top: 30px;
+        position: absolute;
+        right: calc(100%-100px;);
+}
+.header-logo{
+    height: 100px;
+    width: auto;
+}
+.logo-container-mobile {
+    margin: 30px 0 25px -6px;
+}
+@media(min-width: 768px){
+	.logo-container{
+		top: 100px;
+		margin-left: -6px;
+	}
+}
+@media(min-width: 992px){
+	.logo-container{
+		top: 30px;
+		right: 7%;
+	}
+	.header-logo{
+	    height: 115px;
+	}
+}
+@media(min-width: 1200px){
+	.logo-container{
+		right: 9%;
+	}
+}
+@media (min-width: 1500px){
+	.logo-container{
+		right: 9%;
+	}
+}
+@media (min-width: 1740px){
+	.logo-container{
+		right: 15%;
+	}
+}
+@media (min-width: 2000px){
+	.logo-container{
+		right: 20%
+	}
+}
