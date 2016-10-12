@@ -1,5 +1,5 @@
 <?php
-   register_nav_menus( array(
+    register_nav_menus( array(
     'mainmenu' => 'Main Navigation for the Site',
     'footermenu' => 'Footer Navigation for the Site',
 ) );  
@@ -15,17 +15,15 @@ if ( function_exists('register_sidebar') )
         'before_title' => '<h3 class="widgettitle">',
         'after_title' => '</h3>',
     ));
-?>
-<?php 
+
 //allow to upload zip files
 add_filter('upload_mimes', 'custom_upload_mimes');
 function custom_upload_mimes ( $existing_mimes=array() ) {
-    // add your extension to the mimes array as below
-    $existing_mimes['zip'] = 'application/zip';
-    return $existing_mimes;
-}
-?>
-<?php // Truncated Excerpt
+        // add your extension to the mimes array as below
+        $existing_mimes['zip'] = 'application/zip';
+        return $existing_mimes;
+    }
+// Truncated Excerpt
     function excerpt($limit) {
       $excerpt = explode(' ', get_the_excerpt(), $limit);
       if (count($excerpt)>=$limit) {
@@ -51,8 +49,7 @@ function custom_upload_mimes ( $existing_mimes=array() ) {
       $content = str_replace(']]>', ']]&gt;', $content);
       return $content;
     }
-?>
-<?php // CUSTOM THUMBNAIL 
+// CUSTOM THUMBNAIL 
 
 	add_theme_support('post-thumbnails');
 	
@@ -69,8 +66,6 @@ function custom_upload_mimes ( $existing_mimes=array() ) {
 
 	add_theme_support('html5', array('search-form'));
 
-?>
-<?php
 //Changing number of search results
 add_filter('post_limits', 'postsperpage');
 function postsperpage($limits) {
@@ -81,15 +76,13 @@ function postsperpage($limits) {
     return $limits;
 }
 
-?>
-<?php //GET CATEGORY SLUG FROM CATEGORY ID
+//GET CATEGORY SLUG FROM CATEGORY ID
 function get_cat_slug($cat_id) {
     $cat_id = (int) $cat_id;
     $category = &get_category($cat_id);
     return $category->slug;
 }
-?>
-<?php 
+
 //theme_slug is Straped
 function bootstrap_files(){
     wp_register_style( 'bootstrap-css', 'http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css', array(), false, 'all' );
@@ -139,12 +132,13 @@ function animation_slider_scripts(){
 }
 
 
-add_action( 'wp_enqueue_scripts', 'bootstrap_files' );
-add_action( 'wp_enqueue_scripts', 'maui_styles' );
-add_action( 'wp_enqueue_scripts', 'wow_files' );
+    add_action( 'wp_enqueue_scripts', 'bootstrap_files' );
+    add_action( 'wp_enqueue_scripts', 'maui_styles' );
+    add_action( 'wp_enqueue_scripts', 'wow_files' );
 
-?>
-<?php
+
+    require_once('wp_bootstrap_navwalker.php');
+
 //Making jQuery Google API
 function modify_jquery() {
     if (!is_admin()) {
